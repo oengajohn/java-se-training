@@ -23,22 +23,39 @@ public class OperatorsDemo {
         LOGGER.info("Age product: " + ageProduct);
 
         // division operator
-        //? division between integers result to an integer value otherwise double value
+        // ? division between integers result to an integer value otherwise double value
         int divisionResult = studentOneAge / studentTwoAge;
-        LOGGER.info("Division: " +divisionResult);
+        LOGGER.info("Division: " + divisionResult);
 
-        //! To ensure correct values with precision
-        double divisionResultInDouble = (double)studentOneAge / studentTwoAge;
-        LOGGER.info("Division with precision: " +divisionResultInDouble);
+        // ! To ensure correct values with precision
+        double divisionResultInDouble = (double) studentOneAge / studentTwoAge;
+        LOGGER.info("Division with precision: " + divisionResultInDouble);
 
         // modulus operator => remainder of division result
         int remainder = studentOneAge % studentTwoAge;
-        LOGGER.info("Remainder: " +remainder);
+        LOGGER.info("Remainder: " + remainder);
 
+    }
+
+    public void assignmentOperators() {
+        // simple assignment operator
+        int quantity = 35;
+
+        // addition assignment operator
+        quantity += 10; // > quantity = quantity + 10;
+        LOGGER.info("Quantity: " + quantity);
+
+        // multiplication assignment operator
+        quantity *= 100; // > quantity = quantity * 100;
+        LOGGER.info("Quantity: " + quantity);
+        // multiplication assignment operator
+        quantity /= 20; // > quantity = quantity / 20;
+        LOGGER.info("Quantity: " + quantity);
     }
 
     public static void main(String[] args) {
         OperatorsDemo app = new OperatorsDemo();
-        app.arithmeticOperators();
+        // app.arithmeticOperators();
+        app.assignmentOperators();
     }
 }
