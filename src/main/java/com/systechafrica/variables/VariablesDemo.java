@@ -20,12 +20,39 @@ public class VariablesDemo {
     }
 
     private void integerTypes() {
-        variableDeclarations();
         LOGGER.info("Integer Minimum " + Integer.MIN_VALUE);
         LOGGER.info("Integer Maximum " + Integer.MAX_VALUE);
 
         LOGGER.info("Long Minimum " + Long.MIN_VALUE);
         LOGGER.info("Long Maximum " + Long.MAX_VALUE);
+        // byte, short, int, long
+        //? Wrapper classes
+
+        byte aPrimitive = 23;
+        Byte aWrapper = 23;
+
+        LOGGER.info("byte primitive " + aPrimitive);
+        LOGGER.info("Byte wrapper " + aWrapper);
+
+        int a = aWrapper.intValue();
+
+        LOGGER.info("Integer value from Byte wrapper " + a );
+
+        //short 
+        short s = 23;
+        Short aShort = 23;
+
+        // integer 
+        int c =23;
+        Integer aInt = 23;
+
+        // long 
+        long d = 23;
+        //! You need to explicitly suffix the Long wrapper with an L
+        Long aLong = 23L;
+       
+
+
     }
 
     private void floatingTypes() {
@@ -35,12 +62,23 @@ public class VariablesDemo {
         LOGGER.info("float value " + floatRate);
         LOGGER.info("double value " + doubleRate);
 
+        //float
+        float price = 0.2365F;
+        Float priceFloat = 0.2365F;
+        //double
+        double prtPrice = 0.2365;
+        Double priceDouble = 0.2365;
+
     }
 
     private void characterTypes() {
         // character type
         char grade = 'A';
         LOGGER.info("character value " + grade);
+        
+        //character type
+        Character characterGrade = 'F';
+        
 
     }
 
@@ -56,7 +94,6 @@ public class VariablesDemo {
 
     public static void main(String[] args) {
         VariablesDemo demo = new VariablesDemo();
-
         demo.variableDeclarations();
         demo.constantsVariables();
         demo.integerTypes();
