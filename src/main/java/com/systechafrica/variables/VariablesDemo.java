@@ -101,6 +101,13 @@ public class VariablesDemo {
         demo.characterTypes();
         demo.booleanTypes();
 
+        long  a = 2147483648L;
+
+        // int b = a.intValue();
+        int c = (int) a;
+
+        LOGGER.info("int  b value " + c);
+
     }
 
 }
