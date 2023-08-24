@@ -53,9 +53,37 @@ public class OperatorsDemo {
         LOGGER.info("Quantity: " + quantity);
     }
 
+    public void comparisonOperators() {
+        int studentOneAge = 20;
+        int studentTwoAge = 25;
+
+        // equality operator
+        boolean isStudentOneAgeEqualToStudentTwoAge = studentOneAge == studentTwoAge;
+        LOGGER.info("isStudentOneAgeEqualToStudentTwoAge: " + isStudentOneAgeEqualToStudentTwoAge);
+
+        // Inequality operator
+        boolean isStudentOneAgeNotEqualToStudentTwoAge = studentOneAge != studentTwoAge;
+        LOGGER.info("isStudentOneAgeNotEqualToStudentTwoAge: " + isStudentOneAgeNotEqualToStudentTwoAge);
+
+        // less than operator
+        boolean isStudentOneAgeLessThanStudentTwoAge = studentOneAge < studentTwoAge;
+        LOGGER.info("isStudentOneAgeLessThanStudentTwoAge: " + isStudentOneAgeLessThanStudentTwoAge);
+
+        // greater than operator
+        boolean isStudentOneAgeGreaterThanStudentTwoAge = studentOneAge > studentTwoAge;
+        LOGGER.info("isStudentOneAgeGreaterThanStudentTwoAge: " + isStudentOneAgeGreaterThanStudentTwoAge);
+
+        // TODO: Do one for less than or equal to operator
+        //code here
+
+        // TODO: Do one for greater than or equal to operator
+        //code here
+    }
+
     public static void main(String[] args) {
         OperatorsDemo app = new OperatorsDemo();
         // app.arithmeticOperators();
-        app.assignmentOperators();
+        // app.assignmentOperators();
+        app.comparisonOperators();
     }
 }
