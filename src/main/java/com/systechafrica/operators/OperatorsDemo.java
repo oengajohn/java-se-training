@@ -74,16 +74,61 @@ public class OperatorsDemo {
         LOGGER.info("isStudentOneAgeGreaterThanStudentTwoAge: " + isStudentOneAgeGreaterThanStudentTwoAge);
 
         // TODO: Do one for less than or equal to operator
-        //code here
+        // code here
 
         // TODO: Do one for greater than or equal to operator
-        //code here
+        // code here
+    }
+
+    public void andLogicalOperators() {
+        int studentOneAge = 20;
+        int studentTwoAge = 25;
+
+        boolean isStudentOneAllowed = studentOneAge >= 18;
+        boolean isStudentTwoAllowed = studentTwoAge >= 18;
+        // and operator
+        if (isStudentOneAllowed && isStudentTwoAllowed) {
+            LOGGER.info("All students allowed  for ID registration");
+        } else {
+            LOGGER.info("Not allowed  for ID registration");
+        }
+
+    }
+
+    public void orLogicalOperators() {
+        int studentOneAge = 17;
+        int studentTwoAge = 25;
+
+        boolean isStudentOneAllowed = studentOneAge >= 18;
+        boolean isStudentTwoAllowed = studentTwoAge >= 18;
+        // and operator
+        if (isStudentOneAllowed || isStudentTwoAllowed) {
+            LOGGER.info("Students allowed  for ID registration");
+        } else {
+            LOGGER.info("Not allowed  for ID registration");
+        }
+
+    }
+
+    public void notLogicalOperators() {
+        int studentOneAge = 17;
+        boolean isStudentOneAllowed = studentOneAge >= 18;
+        // and operator
+        if (!isStudentOneAllowed) {
+            LOGGER.info("Students allowed  for ID registration");
+        } else {
+            LOGGER.info("Not allowed  for ID registration");
+        }
+
     }
 
     public static void main(String[] args) {
         OperatorsDemo app = new OperatorsDemo();
         // app.arithmeticOperators();
         // app.assignmentOperators();
-        app.comparisonOperators();
+        // app.comparisonOperators();
+        // app.andLogicalOperators();
+        // app.orLogicalOperators();
+        app.notLogicalOperators();
     }
 }
