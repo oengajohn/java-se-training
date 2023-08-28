@@ -65,6 +65,15 @@ public class LoopingStatements {
 
     }
 
+    public int search(int numberToSearch){
+        for (int index = 1; index <= 50; index++) {
+            if(index == numberToSearch){
+                return index;
+            }
+        }
+        return 0;
+    }
+
     public void returnJumpStatements() {
         LOGGER.info("before my loop ");
         for (int index = 0; index < 10; index++) {
