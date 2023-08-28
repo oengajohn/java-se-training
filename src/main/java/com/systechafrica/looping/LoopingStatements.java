@@ -20,10 +20,25 @@ public class LoopingStatements {
 
     public void whileLoop() {
         int studentCount = 0;
+        int counter = 0;
         while (studentCount < 10) {
             LOGGER.info("Student Count = " + studentCount);
             studentCount++; // studentCount = studentCount + 1
+            counter++;
         }
+        LOGGER.info("Counter = " + counter);
+    }
+
+    public void doWhileLoop() {
+
+        int myNumber = 0;
+        int counter = 0;
+        do {
+            LOGGER.info("my number is: " + myNumber);
+            myNumber++; // myNumber = myNumber + 1
+            counter++;
+        } while (myNumber < 10);
+        LOGGER.info("Counter = " + counter);
 
     }
 
@@ -31,6 +46,7 @@ public class LoopingStatements {
         LoopingStatements app = new LoopingStatements();
         // app.forLoop();
         app.whileLoop();
+        app.doWhileLoop();
 
     }
 }
