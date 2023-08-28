@@ -13,7 +13,7 @@ public class LoopingStatementsTest {
 
     @Test
     public void test_number_in_range_of_one_fifty(){
-        int search   = app.search(100);
+        int search   = app.search(10);
         LOGGER.info("search value: " + search);
         Assertions.assertEquals(10, search );
     }
