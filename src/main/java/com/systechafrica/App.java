@@ -2,10 +2,8 @@ package com.systechafrica;
 
 import java.util.logging.Logger;
 
-
-
 public class App {
-     private static final Logger LOGGER = Logger.getLogger(App.class.getName()); 
+    private static final Logger LOGGER = Logger.getLogger(App.class.getName());
 
     public static void main(String[] args) {
         LOGGER.info("Hello World!");
@@ -16,3 +14,4 @@ public class App {
         return a + b;
     }
 }
+// if test fails in the test file => app will not build?
