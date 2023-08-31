@@ -2,6 +2,8 @@ package com.systechafrica.controlflow;
 
 import java.util.logging.Logger;
 
+import com.systechafrica.util.ValidateInput;
+
 public class ControlFlow {
     private static final Logger LOGGER = Logger.getLogger(ControlFlow.class.getName());
 
