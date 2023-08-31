@@ -21,7 +21,11 @@ public class UserInputUsingScanner {
         String password = scanner.nextLine();
 
         if ( username.equals(DB_USERNAME) && password.equals(DB_PASSWORD)){
-            System.out.println("Welcome to our website");
+            System.out.println("***************");
+            System.out.println("ATM SIMULATOR");
+            System.out.println("***************");
+            System.out.println("ATM SERVICES");
+            System.out.println("___________________________");
         }
         else{
             System.err.println("Incorrect username or password");
