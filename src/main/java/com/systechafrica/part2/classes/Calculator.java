@@ -1,5 +1,5 @@
 
-package com.systechafrica.part2;
+package com.systechafrica.part2.classes;
 
 public class Calculator {
     // Method without parameters and return type

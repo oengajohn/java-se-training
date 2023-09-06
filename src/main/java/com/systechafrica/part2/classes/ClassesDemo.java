@@ -1,4 +1,4 @@
-package com.systechafrica.part2;
+package com.systechafrica.part2.classes;
 
 public class ClassesDemo {
     public static void main(String[] args) {
