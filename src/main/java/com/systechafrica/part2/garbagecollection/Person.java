@@ -9,6 +9,11 @@ public class Person {
         this.age = age;
     }
 
+    public Person(int age, String name) {
+        this.name = name;
+        this.age = age;
+    }
+
     public String getName() {
         return name;
     }
