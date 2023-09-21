@@ -3,7 +3,6 @@ package com.systechafrica.part3.logging;
 import java.io.IOException;
 import java.util.logging.*;
 
-
 public class FileLogging {
     private static final Logger LOGGER = Logger.getLogger(FileLogging.class.getName());
 
@@ -19,20 +18,11 @@ public class FileLogging {
         test();
 
     }
-    public static void test(){
+
+    public static void test() {
         LOGGER.info("Info message logging test\n");
         LOGGER.severe("Error message logging test\n");
         LOGGER.warning("Warning message logging test\n");
     }
 
-    static class CustomFormatter extends Formatter {
-
-        @Override
-        public String format(LogRecord record) {
-            String method = record.getSourceMethodName();
-            String level = record.getLevel().getName();
-            String message = record.getMessage();
-            return method+ " | "+ level+" | "+ message;
-        }
-    }
 }
