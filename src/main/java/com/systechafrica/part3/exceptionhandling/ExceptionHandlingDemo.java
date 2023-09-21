@@ -34,10 +34,15 @@ public class ExceptionHandlingDemo {
         return student;
 
     }
-
+    // non-checked exceptions extends from RuntimeException
+    // no alarm when compiling
+    private void printInfo(){
+        throw new RandomRuntimeException("random function not supported");
+    }
     private void workingWithException() {
         StudentController studentController = new StudentController();
         try {
+            printInfo();
             studentController.addStudent(readStudentDetails());
             // send message
             SMSSender sender = new SMSSender();
