@@ -11,4 +11,10 @@ public class Dog extends Animal {
         System.out.println(" Woof!");
     }
 
+    @Override
+    public void move() {
+        // TODO Auto-generated method stub
+        
+    }
+
 }
