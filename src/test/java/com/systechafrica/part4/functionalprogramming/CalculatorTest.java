@@ -1,5 +1,6 @@
 package com.systechafrica.part4.functionalprogramming;
 
+import java.util.function.Supplier;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -33,9 +34,10 @@ class CalculatorTest {
     @Test
     @DisplayName("Test calculation using divide method")
     void testDivide() {
+        Supplier<String> lambdaFun = () -> "Expected result should be match";
         assertAll(
-                () -> assertEquals(2, divider.divide(10, 5), "Expected result should be match"),
-                () -> assertEquals(5, divider.divide(-20, -4), "Expected result should be match"),
+                () -> assertEquals(2, divider.divide(10, 5),lambdaFun),
+                () -> assertEquals(5, divider.divide(-20, -4), lambdaFun),
                 () -> assertThrows(ArithmeticException.class,()-> divider.divide(20, 0) )
 
         );
